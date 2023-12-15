@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus Flower 🪷</title>
+    <style>
+        body {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            text-align: center; /* Center-aligns content within the container */
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+
+        h2 {
+            color: palevioletred;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for h2 */
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded corners for image */
+        }
+
+        p,
+        a {
+            text-align: center; /* Center-aligns text within paragraphs and links */
+            margin: 15px;
+        }
+
+        button {
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for button */
+        }
+
+        .footer {
+            font-size: 0.8em;
+            color: darkgreen;
+            text-align: center; /* Corrected typo here */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>I love Flowers</h1>
+        <h2>Specifically, Lotus Flowers</h2>
+        <img src="https://img.freepik.com/free-photo/pink-yellow-lotus-flower-pond_1340-23671.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696723200&semt=aisearchp1&mt=photo&odnwidth=612&odnheight=612"
+            alt="Lotus Flower" width="500" />
+        <p>
+            The Lotus is a plant that belongs to the Nelumbo genus, and it has been connected with purity, rebirth, and
+            divinity. The lotus flower symbolizes rising from a dark place into beauty and rebirth, as this is precisely
+            how a lotus flower grows.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Lotus" target="_blank" class="learn-more">
+            Learn more on Wikipedia
+        </a>
+        <p>
+            <button class="buy-button" onclick="buyFlower()">
+                👉 Purchase a Lotus Plant 🪷
+            </button>
+        </p>
+        <p class="footer">
+            This page was built by
+            <a href="www.ashtonscodecanvas.com" target="_blank">
+                Ashton Medina
+            </a>
+        </p>
+    </div>
+    <script>
+        function buyFlower() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email?");
+            let emoji = prompt("What is your favorite emoji?");
+
+            alert(
+                "Thank you for your purchase " +
+                name +
+                "! We will send you a confirmation email at " +
+                email +
+                " and will send you updates via " +
+                emoji +
+                "."
+            );
+        }
+    </script>
+</body>
+
+</html>
